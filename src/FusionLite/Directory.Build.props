@@ -1,0 +1,37 @@
+<Project>
+
+    <PropertyGroup>
+        <VersionMajor>0</VersionMajor>
+        <VersionMinor>24</VersionMinor>
+        <VersionPatch>0</VersionPatch>
+        <VersionQuality />
+        <VersionPrefix>$(VersionMajor).$(VersionMinor).$(VersionPatch)$(VersionQuality)</VersionPrefix>
+    </PropertyGroup>
+
+    <PropertyGroup Label="Package">
+        <PackageId>RickDotNet.FusionLite</PackageId>
+        <Nullable>enable</Nullable>
+        <Authors>RickDotNet</Authors>
+        <RepositoryUrl>https://github.com/rickdotnet/FusionLite</RepositoryUrl>
+        <RepositoryType>git</RepositoryType>
+        <RepositoryRoot>$(MSBuildThisFileDirectory)</RepositoryRoot>
+        <PackageProjectUrl>https://github.com/rickdotnet/FusionLite</PackageProjectUrl>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <PackageTags>FusionCache;SQLite-Cache;</PackageTags>
+        <Description>A persistent caching solution for .NET applications that integrates with the powerful FusionCache library.</Description>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+    </PropertyGroup>
+
+    <!-- Using SourceLink -->
+    <PropertyGroup>
+        <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+        <PublishRepositoryUrl>true</PublishRepositoryUrl>
+        <EmbedUntrackedSources>true</EmbedUntrackedSources>
+        <AllowedOutputExtensionsInPackageBuildOutputFolder>$(AllowedOutputExtensionsInPackageBuildOutputFolder);.pdb</AllowedOutputExtensionsInPackageBuildOutputFolder>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Update="Microsoft.SourceLink.GitHub" Version="8.0.0" PrivateAssets="All" />
+    </ItemGroup>
+
+</Project>
