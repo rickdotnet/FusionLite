@@ -17,7 +17,7 @@
         <RepositoryRoot>$(MSBuildThisFileDirectory)</RepositoryRoot>
         <PackageProjectUrl>https://github.com/rickdotnet/FusionLite</PackageProjectUrl>
         <PackageLicenseExpression>MIT</PackageLicenseExpression>
-        <PackageTags>FusionCache;SQLite-Cache;</PackageTags>
+        <PackageTags>FusionCache;SQLite;Cache;</PackageTags>
         <Description>A persistent caching solution for .NET applications that integrates with the powerful FusionCache library.</Description>
         <PackageReadmeFile>README.md</PackageReadmeFile>
     </PropertyGroup>

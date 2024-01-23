@@ -18,7 +18,7 @@ public static class FusionCacheBuilderExtensions
 
         services.Configure(setupAction);
         services.AddTransient(x => x.GetRequiredService<IOptions<FusionLiteOptions>>().Value);
-        services.AddSingleton<IDistributedCache, global::FusionLite.FusionLite>();
+        services.AddSingleton<IDistributedCache, FusionLite>();
 
         var sqliteOptions = new FusionLiteOptions();
         setupAction(sqliteOptions);
